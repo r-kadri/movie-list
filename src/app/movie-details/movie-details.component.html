@@ -1,0 +1,7 @@
+<div *ngIf="movie != undefined" class="movieDetails">
+    <p>Movie : {{ movie.title }} ({{movie.year}})</p>
+    <ul>
+        Actors : 
+        <li *ngFor="let actor of movie.actors">{{ actor }}</li>
+    </ul>
+</div>

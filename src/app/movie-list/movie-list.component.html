@@ -20,5 +20,7 @@
 
     <!-- La ligne -->
     <tr mat-header-row *matHeaderRowDef="lesColonnes"></tr>
-    <tr mat-row *matRowDef="let row; columns: lesColonnes;"></tr>
+    <tr mat-row *matRowDef="let row; columns: lesColonnes;" (click)="selectMovie(row)"></tr>
   </table>
+
+  <app-movie-details [movie]="getSelectedMovie()"></app-movie-details>

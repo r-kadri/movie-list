@@ -1,11 +1,11 @@
-export interface Film {
+export interface Movie {
     title: string;
     year: number;
     director: string;
     actors: string[];
 }
 
-export const FILMS: Film[] = [
+export const MOVIES: Movie[] = [
     {
         "title": "Inception",
         "year": 2010,
